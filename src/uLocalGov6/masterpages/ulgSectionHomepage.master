@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/masterpages/ulgdesign.master" AutoEventWireup="true" %>
+<asp:content ContentPlaceHolderId="metadata" runat="server">
+	
+</asp:content>
+
+<asp:content ContentPlaceHolderId="breadcrumb" runat="server">
+	<!-- section has no breadcrumb -->
+</asp:content>
+
+<asp:content ContentPlaceHolderId="content" runat="server">
+	<div class="row">
+		<div class="span8">
+			<div class="hero-unit">
+				<h2><umbraco:Item field="sectionName" runat="server" /> Section</h2>
+				<umbraco:Item field="bodyText" runat="server" />
+			</div>
+		</div>
+		<div class="span4">
+			<div class="well">
+				<h2>News...</h2>
+			</div>
+		</div>
+	</div>
+	
+	<umbraco:Macro Alias="ulg.landingpage" runat="server" />
+	
+</asp:content>
+
+<asp:content ContentPlaceHolderId="footer" runat="server">
+	
+</asp:content>
+
+<asp:content ContentPlaceHolderId="scripts" runat="server">
+	
+</asp:content>
